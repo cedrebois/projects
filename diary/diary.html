@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary</title>
+    <link rel="stylesheet" href="styles/diary.css">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>
+          <img src="images/Diary.jpg">
+        </th>
+        <th class="header">
+          Diary
+        </th>
+      </tr>
+      <tr>
+        <td class="title">
+          Thoughts
+        </td>
+        <td>
+          <textarea class="thought-input" type="text" placeholder="Write your thought"></textarea><br>
+          <button class="js-thought" onclick="send()">Send</button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          class="title">Considerations
+        </td>
+        <td>
+          <textarea class="consideration-input" type="text" placeholder="Write your consideration"></textarea><br>
+          <button class="js-consideration" onclick="send()">Send</button>
+        </td>
+      </tr>
+      <tr>
+        <td class="title">Your Thoughts</td>
+        <td class="thought-output"></td>
+      </tr>
+      <tr>
+        <td class="title">Your Considerations</td>
+        <td class="consideration-output"></td>
+      </tr>
+    </table>
+  </body>
+  <script src="scripts/diary.js"></script>
+</html>
